@@ -29,7 +29,7 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
-app.get('/github-hook', routes.github);
+app.post('/github-hook', routes.github);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

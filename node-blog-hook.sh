@@ -1,5 +1,4 @@
-GIT_WORK_TREE=~/node-blog
-export GIT_WORK_TREE
+cd ~/node-blog
 forever stop app.js &
 wait && echo "[Server Stopped]"
 wait && git pull origin master &
